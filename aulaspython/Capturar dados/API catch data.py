@@ -9,5 +9,13 @@ city = input('Enter a city: ')
 base_url = "http://api.openweathermap.org/data/2.5/weather?APPID="+API_key+"&q="+city
 
 weather_data = requests.get(base_url).json()
+print(type(weather_data))
+#temperature = weather_data['main']['temp'] 
+main = weather_data['main']
+temperature = main['temp']
 
-pprint(weather_data)
+c = temperature - 275.15
+
+print(f'{c:4f} ºC')
+
+#pprint(weather_data)
