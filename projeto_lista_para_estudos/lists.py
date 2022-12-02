@@ -1,4 +1,4 @@
-def listx ():
+def listx():
     dict_exerc_list = {
         "basic1": 150,
         "basic2": 150,
